@@ -41,7 +41,7 @@ export default function App() {
 
     try {
       // Direct registration call to our server backend
-      const response = await fetch('/api/notify', {
+      const response = await fetch(`${import.meta.env.BASE_URL}api/notify`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
