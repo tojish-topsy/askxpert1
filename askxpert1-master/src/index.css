@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #055C20;
+  --color-brand-cream: #F4F3ED;
+  --color-brand-cream-dark: #E8E7DF;
+  --color-brand-charcoal: #1C1D1A;
+  --color-brand-muted: #50524B;
+  --color-brand-accent: #0D6C29;
+  
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", "Lora", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer utilities {
+  /* Dynamic Halftone Dotted Background */
+  .bg-halftone {
+    background-image: radial-gradient(rgba(5, 92, 32, 0.06) 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+  }
+  
+  .bg-halftone-dense {
+    background-image: radial-gradient(rgba(5, 92, 32, 0.1) 1.2px, transparent 1.2px);
+    background-size: 10px 10px;
+  }
+
+  /* SVG Waveform Line Glows */
+  .svg-glow {
+    filter: drop-shadow(0 0 4px rgba(5, 92, 32, 0.15));
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F3ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D7CF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #055C20;
+}

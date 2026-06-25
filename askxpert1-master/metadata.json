@@ -1,0 +1,6 @@
+{
+  "name": "AskXpert Coming Soon",
+  "description": "Official coming soon and notification registration page for AskXpert, conducted by IEEE CE Kidangoor Student Branch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
